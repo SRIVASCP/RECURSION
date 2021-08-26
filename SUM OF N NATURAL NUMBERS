@@ -1,0 +1,22 @@
+int sum(int n);
+#include <stdio.h>
+
+int main()
+{
+    int n,x;
+    scanf("%d",&n);
+    x=sum(n);
+    printf("%d",x);
+
+    return 0;
+}
+int sum(int n){
+    if(n==0){
+        return 0;
+    }
+    else{
+        return sum(n-1)+n;  
+        }
+}
+INPUT====5;
+OUTPUT--->15;
