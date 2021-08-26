@@ -1,0 +1,24 @@
+//tree recursion
+#include <stdio.h>
+
+void fun(int n){
+    
+    
+        if(n>0){
+        printf("%d",n);
+     fun(n-1);
+     fun(n-1);
+    }
+}
+int main()
+{
+    int r;
+    fun(3);
+    
+
+    return 0;
+}
+
+
+output--->>>>>3211211
+its a case of dynamic programming concept
